@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF80AB"
+    tools:context="com.example.valius.happybirthday.MainActivity">
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gifTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/flower"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/androidparty"
+        android:layout_above="@+id/gifTextView"
+        android:layout_alignLeft="@+id/gifTextView"
+        android:layout_alignStart="@+id/gifTextView"
+        android:layout_alignRight="@+id/gifTextView"
+        android:layout_alignEnd="@+id/gifTextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF80AB"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:text="Happy Birthday Maria Francesca!"
+        android:textColor="@android:color/background_light"
+        android:textSize="34sp"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/FromZioVale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:text="Zio Vale"
+        android:textColor="#880E4F"
+        android:textSize="24sp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/gifTextView"
+        android:layout_alignEnd="@+id/gifTextView"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp" />
+/>
+
+</android.widget.RelativeLayout>
